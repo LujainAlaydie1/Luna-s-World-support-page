@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's World | Privacy & Support</title>
+    <style>
+        :root {
+            /* Your Custom Palette */
+            --main-bg: #ebede8;      
+            --header-blue: #2e6178; 
+            --forest-green: #4c5a3e; 
+            
+            --text-dark: #1d1d1f;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--main-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            background-color: var(--header-blue);
+            color: var(--white);
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            box-shadow: 0 8px 16px rgba(46, 97, 120, 0.2);
+        }
+
+        h1 { 
+            color: var(--header-blue);
+            font-size: 42px; 
+            font-weight: 700; 
+            letter-spacing: -0.5px; 
+            margin: 0;
+        }
+
+        h2 { 
+            color: var(--header-blue);
+            font-size: 26px; 
+            font-weight: 600; 
+            margin-top: 50px; 
+            border-bottom: 2px solid rgba(46, 97, 120, 0.1);
+            padding-bottom: 12px;
+        }
+
+        h3 { 
+            color: var(--forest-green);
+            font-size: 20px; 
+            font-weight: 600; 
+            margin-top: 30px; 
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        p, li { 
+            font-size: 17px; 
+            opacity: 0.9;
+        }
+
+        .last-updated { 
+            color: var(--header-blue);
+            font-weight: 500;
+            font-size: 14px; 
+            opacity: 0.6;
+            margin-top: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--forest-green);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 24px;
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover { 
+            transform: translateY(-2px);
+            opacity: 0.95;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--header-blue);
+            font-size: 13px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="app-icon">🐾</div>
+        <h1>Luna's World</h1>
+        <div class="last-updated">REBUILT & REDESIGNED | APRIL 2026</div>
+    </header>
+
+    <div class="card">
+        <section id="support">
+            <h2>Support & Contact</h2>
+            <p>Welcome to the new Luna's World. If you're experiencing issues with the breed detector, clinic maps, or your user profile, our team is ready to assist you.</p>
+            <a href="mailto:lujainalaydie1@gmail.com" class="button">Contact Support Team</a>
+        </section>
+    </div>
+
+    <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>Your privacy is as important to us as your cats. This policy outlines how your data is handled in the 2026 version of Luna's World.</p>
+
+        <h3>Data Infrastructure</h3>
+        <p>We use <strong>Firebase</strong> for all data storage. Your information is encrypted in transit and at rest using industry-standard protocols. We never sell your personal data.</p>
+
+        <h3>Core Features & Privacy</h3>
+        <ul>
+            <li><strong>Breed Detection:</strong> Image analysis happens locally on your device via CoreML. Your photos are never uploaded for AI training.</li>
+            <li><strong>Location Data:</strong> We use coarse location data (Cities) to filter clinics and adoption posts. We do not track your movement.</li>
+            <li><strong>User Profiles:</strong> Email and ID data are stored solely to facilitate account security and post management.</li>
+        </ul>
+
+        <h3>Your Rights</h3>
+        <p>You may delete your posts directly within the app. For full account deletion and data removal, please email us using the link above.</p>
+    </section>
+
+    <footer>
+        &copy; 2026 Lujain Alaydie. Built with Swift & ❤️ for Luna.
+    </footer>
+</div>
+
+</body>
+</html>
